@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "sklepmistr"
+name = "supplement_tracker"
 version = "0.1.0"
-description = "Wine aggregator project"
+description = "Supplement aggregator project"
 authors = ["hynek.blaha <hynek.blaha.dev@gmail.com>"]
 
 [tool.poetry.dependencies]
