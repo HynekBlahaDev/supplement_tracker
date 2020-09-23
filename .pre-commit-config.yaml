@@ -26,7 +26,11 @@ repos:
     hooks:
     -   id: mypy
 
--   repo: https://github.com/pre-commit/mirrors-pylint
-    rev: v2.6.0
+
+-   repo: local
     hooks:
     -   id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]

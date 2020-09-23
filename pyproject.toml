@@ -1,14 +1,17 @@
 [tool.poetry]
-name = "sklepmistr"
+name = "supplement_tracker"
 version = "0.1.0"
-description = "Wine aggregator project"
+description = "Supplement aggregator project"
 authors = ["hynek.blaha <hynek.blaha.dev@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+Scrapy = "^2.3.0"
+pydantic = "^1.6.1"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.7.1"
+pylint = "^2.6.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0a5"]
@@ -22,4 +25,4 @@ line_length = 120
 multi_line_output = 3
 include_trailing_comma = true
 known_first_party = ["src", "tests"]
-known_third_party = []
+known_third_party = ["pydantic", "scrapy"]
